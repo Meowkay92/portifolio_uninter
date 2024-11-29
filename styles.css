@@ -1,0 +1,165 @@
+/* Definindo o estilo base para a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Definindo o fundo preto e estrutura geral */
+body {
+    background-color: #1c1c1c;  /* Fundo preto */
+    color: #fff;  /* Texto branco para contraste */
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Centralizando a estrutura */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #2c2c2c;  /* Cor de fundo escura para o container */
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);  /* Sombra suave */
+    padding: 30px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;  /* Animação para o conteúdo aparecer suavemente */
+}
+
+/* Efeito de fade-in para a página */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img.foto-perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4A90E2;  /* Borda colorida ao redor da foto */
+    transition: transform 0.3s ease-in-out;
+}
+
+header img.foto-perfil:hover {
+    transform: scale(1.1);  /* Efeito de aumento suave ao passar o mouse */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+/* Seção sobre mim */
+.sobre-mim h2 {
+    font-size: 2rem;
+    color: #4A90E2;
+    margin-bottom: 15px;
+}
+
+.sobre-mim p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Seção de formação educacional */
+.formacao h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #4A90E2;
+}
+
+.formacao p {
+    font-size: 1.1rem;
+    color: #bbb;
+}
+
+.formacao a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formacao a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de habilidades */
+.habilidades h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #4A90E2;
+}
+
+.habilidades ul {
+    list-style-type: none;
+}
+
+.habilidades li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #bbb;
+}
+
+/* Seção de links */
+.links h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #4A90E2;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.links a:hover {
+    color: #fff;  /* Muda para branco ao passar o mouse */
+    transform: translateX(10px);  /* Efeito de movimento para a direita */
+}
+
+.links a:active {
+    transform: translateX(5px);  /* Efeito de pressão ao clicar */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #bbb;
+    border-top: 2px solid #4A90E2;
+    padding-top: 10px;
+}
